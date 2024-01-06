@@ -1,0 +1,387 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+header .logo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.5rem 7%;
+	background-color: gray;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 9999;
+}
+
+.navigasi {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.5rem 7%;
+	background-color: red;
+	position: fixed;
+	top: 4.5rem;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+}
+
+.navigasi .search a {
+	font-size: 2rem;
+	color: white;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+.navigasi .search a:hover {
+	color: black;
+}
+
+.navigasi .navigasi-nav {
+	display: flex;
+}
+
+.navigasi .navigasi-nav a {
+	margin: 0 1rem;
+	font-size: 1.7rem;
+	font-weight: bold;
+	text-transform: capitalize;
+	text-decoration: none;
+	color: white;
+	transition: 0.5s;
+}
+
+.navigasi .navigasi-nav a:hover {
+	color: black;
+}
+
+.navigasi .navigasi-nav a::after {
+	content: '';
+	display: flex;
+	padding-bottom: 0.5rem;
+	border-bottom: 0.2rem solid black;
+	transform: scaleX(0);
+	transition: 0.5s;
+}
+
+.navigasi .navigasi-nav a:hover::after {
+	transform: scale(0.5);
+}
+
+.navigasi .humberger-menu a {
+	font-size: 2rem;
+	color: white;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+.navigasi .humberger-menu a:hover {
+	color: black;
+}
+
+#humberger-menu {
+	display: none;
+}
+
+.pertama .image {
+	margin-top: 10.2rem;
+	padding: 0 2rem;
+}
+
+.pertama .image img {
+	width: 100%;
+}
+
+.kedua h2 {
+	margin-top: 7rem;
+	margin-bottom: 4rem;
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.kedua .player {
+	padding: 0 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	text-align: center;
+}
+
+.kedua .player .player-ahm {
+	margin: 1rem 1rem;
+	padding: 1.5rem 1rem;
+	border-radius: 2rem;
+	border: 2px solid black;
+	background-color: whitesmoke;
+	transition: 0.5s;
+}
+
+.kedua .player .player-ahm:hover {
+	transform: scale(1.05);
+	border-color: red;
+}
+
+.kedua .player .player-ahm img {
+	max-width: 15rem;
+	border-radius: 1rem;
+}
+
+.kedua .player .player-ahm .nama {
+	margin-top: 1rem;
+	font-size: 1.7rem;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+.kedua .player .player-ahm .jabatan {
+	margin-top: 0.3rem;
+	font-weight: bold;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	margin-bottom: 1.5rem;
+}
+
+.kedua .player .player-ahm a {
+	padding: 0.5rem 1.5rem;
+	font-size: 1.3rem;
+	font-weight: bold;
+	text-transform: capitalize;
+	text-decoration: none;
+	background-color: black;
+	color: white;
+	border-radius: 1rem;
+	transition: 0.5s;
+}
+
+.kedua .player .player-ahm a:hover {
+	color: red;
+}
+
+.ketiga h2 {
+	margin-top: 7rem;
+	margin-bottom: 4rem;
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.ketiga .berita {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: auto;
+}
+
+.ketiga .berita .berita-ahm {
+	padding: 1.5rem 1rem;
+	border: 2px solid black;
+	background-color: whitesmoke;
+	border-radius: 2rem;
+	transition: 0.5s;
+	margin: 1rem 1rem;
+}
+
+.ketiga .berita .berita-ahm:hover {
+	transform: scale(1.05);
+	border-color: red;
+}
+
+.ketiga .berita .berita-ahm img {
+	max-width: 15rem;
+	border-radius: 1rem;
+}
+
+.ketiga .berita .berita-ahm h3 {
+	margin-top: 1rem;
+	font-size: 1.5rem;
+	text-transform: capitalize;
+	text-align: center;
+	max-width: 15rem;
+}
+
+.ketiga .berita .berita-ahm p {
+	font-size: 1.2rem;
+	margin-top: 1rem;
+	text-align: center;
+	max-width: 15rem;
+	margin-bottom: 2rem;
+}
+
+.ketiga .berita .berita-ahm a {
+	padding: 0.5rem 1.5rem;
+	font-size: 1.3rem;
+	font-weight: bold;
+	text-transform: capitalize;
+	text-decoration: none;
+	background-color: black;
+	color: white;
+	border-radius: 1rem;
+	transition: 0.5s;
+}
+
+.ketiga .berita .berita-ahm a:hover {
+	color: red;
+}
+
+.keempat h2 {
+	margin-top: 7rem;
+	margin-bottom: 4rem;
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.keempat .galeri {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: auto;
+}
+
+.keempat .galeri .galeri-ahm img {
+	border: 2px solid black;
+	border-radius: 0.7rem;
+	max-width: 15rem;
+	margin: 1rem 1rem;
+	transition: 0.5s;
+}
+
+.keempat .galeri .galeri-ahm img:hover {
+	transform: scale(1.05);
+	border-color: red;
+}
+
+footer {
+	align-items: center;
+	padding: 1.5rem 7%;
+	text-align: center;
+	background-color: red;
+	color: white;
+	margin-top: 4rem;
+}
+
+footer .policy a {
+	margin: 0 1.5rem;
+	text-decoration: none;
+	text-transform: capitalize;
+	color: white;
+	font-size: 1.5rem;
+	transition: 0.3s;
+}
+
+footer .policy a:hover {
+	color: gray;
+}
+
+footer p {
+	line-height: 1.5;
+	margin-top: 1.5rem;
+	text-align: center;
+	text-transform: capitalize;
+	color: white;
+	font-size: 1.5rem;
+	transition: 0.3s;
+}
+
+@media (max-width: 1200px) {
+	html {
+		font-size: 80%;
+	}
+
+	.navigasi {
+		top: 4.9rem;
+	}
+
+	.pertama .image {
+		margin-top: 10.7rem;
+	}
+}
+
+@media (max-width: 992px) {
+	html {
+		font-size: 70%;
+	}
+
+	.navigasi {
+		top: 5.3rem;
+	}
+
+	.pertama .image {
+		margin-top: 11.1rem;
+	}
+}
+
+@media (max-width: 768px) {
+	html {
+		font-size: 63%;
+	}
+
+	#humberger-menu {
+		display: inline-block;
+	}
+
+	.navigasi .navigasi-nav {
+		display: block;
+		position: absolute;
+		top: 100%;
+		right: -100%;
+		width: 25rem;
+		height: 100vh;
+		background-color: gray;
+		transition: 0.3s;
+	}
+
+	.navigasi .navigasi-nav.active {
+		right: 0;
+	}
+
+	.navigasi .navigasi-nav a {
+		font-size: 1.7rem;
+		display: block;
+		margin: 1.3rem;
+	}
+
+	.navigasi .navigasi-nav a::after {
+		transform-origin: 0 0;
+	}
+
+	.navigasi .navigasi-nav a:hover::after {
+		transform: scaleX(0.2);
+	}
+
+	.navigasi {
+		top: 5.5rem;
+	}
+
+	.pertama .image {
+		margin-top: 11rem;
+	}
+
+}
+
+@media (max-width: 450px) {
+	html {
+		font-size: 53%;
+	}
+
+	.navigasi {
+		top: 5.9rem;
+	}
+
+	.pertama .image {
+		margin-top: 11.3rem;
+	}
+}
