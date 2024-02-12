@@ -86,6 +86,39 @@ header .logo {
 	display: none;
 }
 
+.navigasi .search-form {
+	display: flex;
+	position: absolute;
+	top: 100%;
+	width: 45rem;
+	height: 5rem;
+	align-items: center;
+	background-color: white;
+	transform-origin: top; 
+	transform: scaleY(0);
+	transition: 0.3s;
+}
+
+.navigasi .search-form.active {
+	transform: scaleY(1);
+}
+
+.navigasi .search-form input {
+	width: 100%;
+	height: 100%;
+	font-size: 1.6rem;
+	color: black;
+	padding: 0 0.8rem;
+	border: none;
+}
+
+.navigasi .search-form label {
+	font-size: 1.8rem;
+	color: black;
+	margin-right: 1.4rem;
+	cursor: pointer;
+}
+
 .pertama .image {
 	margin-top: 10.2rem;
 	padding: 0 2rem;
@@ -379,6 +412,10 @@ footer p {
 
 	.navigasi {
 		top: 5.9rem;
+	}
+
+	.navigasi .search-form {
+		width: 88%;
 	}
 
 	.pertama .image {
